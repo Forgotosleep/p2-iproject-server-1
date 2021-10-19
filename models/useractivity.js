@@ -16,6 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   UserActivity.init({
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+    },
     UserId: {
       type: DataTypes.INTEGER,
       allowNull: false,
