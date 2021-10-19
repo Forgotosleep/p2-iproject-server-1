@@ -6,6 +6,8 @@ router.get('/', (req, res) => {
   res.send('WHEEE!')
 });
 
+router.use('/users', require('./user.js'));
+
 router.use(errorHandler)
 
 module.exports = router;

@@ -6,9 +6,9 @@ const errorHandler = (err, req, res, next) => {
       err.errors.map(error => {
         message.push(error.message)
       }) 
-      res.status(400).json({ message: err.errors[0].validatorArgs[0]?.message || err.errors[0].message })
-      // res.status(400).json({ message })
-      // res.status(400).json(err)
+      // res.status(400).json({ message: err.errors[0].validatorArgs[0]?.message || err.errors[0].message })
+      res.status(400).json({ message })
+      res.status(400).json(err)
       break
     case "SequelizeUniqueConstraintError":
       err.errors.map(error => {
