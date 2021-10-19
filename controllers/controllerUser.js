@@ -38,6 +38,37 @@ class ControllerUser {
       next(err)
     }
   }
+
+  static async loginGoogle(req, res, next) {
+    try {
+      let { idToken } = req.body
+      const ticket = await client.verifyIdToken({
+        idToken: idToken,
+        audience: process.env.GOOGLECLIENTID
+      })
+
+      let payload = ticket.getPayload()
+
+      let user = await User.findOrCreate(
+        {
+          where: {
+            email: payload.email
+          }, defaults: {
+            email: payload.email,
+            name: payload.name,
+            password: `${payload.email}_${payload.name}`
+          }
+        }
+      )
+      const access_token = createToken({
+        id: user[0].id,
+        email: user[0].email,
+      })
+      res.status(200).json({ access_token })
+    } catch (err) {
+      next(err)
+    }
+  }
 }
 
 module.exports = ControllerUser

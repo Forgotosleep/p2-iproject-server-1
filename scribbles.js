@@ -75,6 +75,7 @@ SERVER Endpoints
 User  -OK
 - Login
 - Register
+- Login Google
 
 Activity  -OK
 - GetAll (by the User) (GET)
