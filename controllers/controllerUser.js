@@ -11,7 +11,7 @@ class ControllerUser {
           name, email, password, role: 'admin'
         },
       )
-      res.status(201).json({ id: result.id, email: result.email, username: result.username, role: result.role })
+      res.status(201).json({ id: result.id, email: result.email, name: result.name })
     } catch (err) {
       next(err)
     }
