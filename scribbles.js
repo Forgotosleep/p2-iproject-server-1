@@ -87,6 +87,6 @@ UserActivity / Records
 - Create Record
 - Edit Record
 - Delete Record
-* Print Record, with timestamp so it can't be faked
+* Print Record, with timestamp so it can't be faked (Client)
 
 */
