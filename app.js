@@ -7,9 +7,11 @@ app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.get('/', (req, res) => {
-  res.send('Whee!')
-})
+// app.get('/', (req, res) => {
+//   res.send('Whee!')
+// })
+
+app.use('/', require('./routes'));
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

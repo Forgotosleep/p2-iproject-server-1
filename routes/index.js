@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const { authentication } = require('../middlewares/auths')
+const errorHandler = require('../middlewares/errorHandler.js');
+
+router.get('/', (req, res) => {
+  res.send('WHEEE!')
+});
+
+router.use(errorHandler)
+
+module.exports = router;
