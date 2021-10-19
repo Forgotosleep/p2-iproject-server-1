@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
 
 router.use('/users', require('./user.js'));
 
+router.use(authentication)
+
+router.use('/activities', require('./activity.js'))
+
 router.use(errorHandler)
 
 module.exports = router;

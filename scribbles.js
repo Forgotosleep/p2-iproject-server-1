@@ -90,3 +90,18 @@ UserActivity / Records
 * Print Record, with timestamp so it can't be faked (Client)
 
 */
+
+/* 
+TODO: (lest I forget)
+BACKEND:
+- Endpoints
+- OAuth (Server)
+- Documentation
+
+FRONTEND:
+- G-Calendar
+- Oauth (Client)
+- Looks
+
+
+*/
