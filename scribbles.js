@@ -75,7 +75,7 @@ SERVER Endpoints
 User  -OK
 - Login
 - Register
-- Login Google
+- Login Google // No Oauth Client Key in .env just yet!
 
 Activity  -OK
 - GetAll (by the User) (GET)
@@ -95,9 +95,11 @@ UserActivity / Records -OK
 /* 
 TODO: (lest I forget)
 BACKEND:
-- Endpoints
-- OAuth (Server)
-- Documentation
+- Endpoints -OK
+- OAuth (Server)  -OK
+- Documentation -OK
+- AuthZ?
+- GET Record by its ID?
 
 FRONTEND:
 - G-Calendar
