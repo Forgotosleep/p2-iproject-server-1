@@ -72,17 +72,17 @@ git remote set-url origin git@github.com:Forgotosleep/p2-iproject-server-1.git
 /* 
 SERVER Endpoints
 
-User
+User  -OK
 - Login
 - Register
 
-Activity
+Activity  -OK
 - GetAll (by the User) (GET)
 - Create new (POST)
 - Edit Activity (PUT)
 - Delete Activity (DELETE)
 
-UserActivity / Records
+UserActivity / Records -OK
 - GetAll (tied to per User) (GET) ; with Date Query if possible
 - Create Record
 - Edit Record
@@ -102,6 +102,5 @@ FRONTEND:
 - G-Calendar
 - Oauth (Client)
 - Looks
-
 
 */

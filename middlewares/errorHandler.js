@@ -40,6 +40,9 @@ const errorHandler = (err, req, res, next) => {
     case "MissingToken":
       res.status(401).json({ message: err.message || 'Please provide a valid access token' })
       break
+      case "Unauthorized":
+        res.status(403).json({ message: err.message || 'Not yours to change.' })
+        break
     case "JsonWebTokenError":
       res.status(401).json({ message: err.message })
       break
