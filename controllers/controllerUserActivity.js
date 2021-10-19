@@ -7,7 +7,7 @@ class controllerUserActivity {
 
       const result = await UserActivity.findAll({
         where: { UserId },
-        attributes: { exclude: ["createdAt", "updatedAt"] },
+        // attributes: { exclude: ["createdAt", "updatedAt"] },
         include: [{
           model: Activity,
           attributes: { exclude: ["createdAt", "updatedAt"] },
@@ -78,7 +78,7 @@ class controllerUserActivity {
       const recordId = req.params.recordId
       const { status } = req.query
   
-      console.log(req.query, '<<< QUERY');
+      // console.log(req.query, '<<< QUERY');
   
       const record = await UserActivity.findByPk(recordId)
   
@@ -92,7 +92,8 @@ class controllerUserActivity {
   
       const result = await UserActivity.update(
         {
-          status
+          status,
+          updatedAt: new Date()
         },
         {
           where: { id: recordId },
