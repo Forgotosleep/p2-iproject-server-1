@@ -26,16 +26,16 @@ const authentication = async (req, res, next) => {
   }
 }
 
-const authorization = async (req, res, next) => {
-  try {
-    const UserId = req.user.id
-    const id = req.params.id
+// const authorization = async (req, res, next) => {
+//   try {
+//     const UserId = req.user.id
+//     const id = req.params.id
 
     
 
-  } catch (err) {
-    next(err)
-  }
-}
+//   } catch (err) {
+//     next(err)
+//   }
+// }
 
 module.exports = { authentication }

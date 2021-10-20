@@ -98,8 +98,8 @@ BACKEND:
 - Endpoints -OK
 - OAuth (Server)  -OK
 - Documentation -OK
-- AuthZ?
-- GET Record by its ID?
+- AuthZ?  -NOT NEEDED. By default access is blocked on client's side, and another user's activities can't be accessed by a different user except by POSTMAN and its like
+- GET Record by its ID?  - might be needed, but right now priority lies on G-calendar integration.
 
 FRONTEND:
 - G-Calendar

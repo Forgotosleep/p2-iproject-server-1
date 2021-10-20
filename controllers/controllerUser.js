@@ -1,6 +1,8 @@
 const { User } = require('../models')
 const { decode } = require('../helpers/bcrypt')
 const { createToken } = require('../helpers/jwt')
+const { OAuth2Client } = require('google-auth-library');
+const client = new OAuth2Client(process.env.GOOGLECLIENTID);
 
 class ControllerUser {
   static async register(req, res, next) {
