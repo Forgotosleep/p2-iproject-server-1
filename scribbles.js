@@ -124,3 +124,20 @@ CLIENT TODO:
 - INTEGRATE G-CALENDAR W/ RECORDS   -OK
 - DEPLOY      
 */
+
+/* 
+heroku create brian-idid
+
+heroku addons:create heroku-postgresql:hobby-dev --app brian-idid
+
+heroku config --app brian-idid
+
+heroku config:set SECRETKEY= GOOGLECLIENTID= --app brian-idid
+
+heroku git:remote --app brian-idid
+
+git push heroku +HEAD:master
+
+heroku run bash 
+npx sequelize-cli db:migrate
+*/

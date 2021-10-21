@@ -16,6 +16,12 @@ app.use(express.urlencoded({extended:true}));
 
 app.use('/', require('./routes'));
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening at http://localhost:${port}`)
+// })
+
+// if(process.env.NODE_ENV !== "development") {
+//   app.listen(port, () => {
+//     console.log(`Example app listening at http://localhost:${port}`)
+//   })
+// }
