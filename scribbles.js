@@ -140,4 +140,9 @@ git push heroku +HEAD:master
 
 heroku run bash 
 npx sequelize-cli db:migrate
+
+https://brian-idid.herokuapp.com/
+
+heroku logs --tail
+
 */
