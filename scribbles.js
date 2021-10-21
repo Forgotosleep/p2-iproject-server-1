@@ -102,8 +102,25 @@ BACKEND:
 - GET Record by its ID?  - might be needed, but right now priority lies on G-calendar integration.
 
 FRONTEND:
-- G-Calendar
+- G-Calendar  -OK!
 - Oauth (Client)
 - Looks
 
+*/
+
+/* 
+CLIENT TODO:
+- ACTIVITY
+  * GET       -OK
+  * POST      -OK
+  * PUT       -OK
+  * DELETE    -OK
+- RECORDS
+  * GET       -OK
+  * POST      
+  * PUT       -NOT IMPLEMENTED (It seems silly once I think about it. You could just as easily delete, then add a new one and it seems more intuitive that way)
+  * PATCH     -OK
+  * DELETE    -OK
+- INTEGRATE G-CALENDAR W/ RECORDS   -OK
+- DEPLOY      
 */
